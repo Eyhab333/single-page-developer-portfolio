@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./starter-code/assets/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Single-page developer portfolio</title>
@@ -31,190 +31,243 @@
         font-family: "Space Grotesk", sans-serif;
       }
     </style>
+    <script
+      src="https://kit.fontawesome.com/f165a59b56.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
+      <!--=============== header ===================-->
+      <header class="hero__header">
+        <p class="hero__header__logo">adamkeyes</p>
+        <nav class="hero__header__nav">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+      </header>
       <!--=============== hero ===================-->
       <section class="hero">
-        <!--=============== header ===================-->
-        <header class="hero__header">
-          <p class="hero__header__logo">adamkeyes</p>
-          <nav class="hero__header__nav">
-            <a href="#"
-              ><img
-                src="./starter-code/assets/images/icon-github.svg"
-                alt="github"
-            /></a>
-            <a href="#"
-              ><img
-                src="./starter-code/assets/images/icon-frontend-mentor.svg"
-                alt="frontend-mentor"
-            /></a>
-            <a href="#"
-              ><img
-                src="./starter-code/assets/images/icon-linkedin.svg"
-                alt="linkedin"
-            /></a>
-            <a href="#"
-              ><img
-                src="./starter-code/assets/images/icon-twitter.svg"
-                alt="twitter"
-            /></a>
-          </nav>
-        </header>
+        <!--============ hero__text ==============-->
         <div class="hero__text">
-          <h1>Nice to meet you! <br>
-            I’m <span>Adam Keyes.</span></h1>
-          <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+          <h1>
+            Nice to meet you! <br />
+            I’m <span>Adam Keyes.</span>
+          </h1>
+          <p>
+            Based in the UK, I’m a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
           <a href="#">CONTACT ME</a>
         </div>
-        <div class="hero__img"></div>
+        <div class="hero__img">
+          <img
+            src="./starter-code/assets/images/image-profile-desktop.webp"
+            alt="profile"
+          />
+        </div>
       </section>
       <hr />
       <!--=============== expirence-section ===================-->
-      <section class="expirence-section">
-        <div class="html grid-item">
-          <h3>HTML</h3>
-          <p>4 Years Experience</p>
-        </div>
-        <div class="css grid-item">
-          <h3>CSS</h3>
-          <p>4 Years Experience</p>
-        </div>
-        <div class="js grid-item">
-          <h3>Javascript</h3>
-          <p>4 Years Experience</p>
-        </div>
-        <div class="accessibility grid-item">
-          <h3>Accessibility</h3>
-          <p>4 Years Experience</p>
-        </div>
-        <div class="react grid-item">
-          <h3>React</h3>
-          <p>3 Years Experience</p>
-        </div>
-        <div class="sass grid-item">
-          <h3>Sass</h3>
-          <p>3 Years Experience</p>
+      <section class="container">
+        <div class="expirence-section">
+          <div class="html grid-item">
+            <h3>HTML</h3>
+            <p>4 Years Experience</p>
+          </div>
+          <div class="css grid-item">
+            <h3>CSS</h3>
+            <p>4 Years Experience</p>
+          </div>
+          <div class="js grid-item">
+            <h3>Javascript</h3>
+            <p>4 Years Experience</p>
+          </div>
+          <div class="accessibility grid-item">
+            <h3>Accessibility</h3>
+            <p>4 Years Experience</p>
+          </div>
+          <div class="react grid-item">
+            <h3>React</h3>
+            <p>3 Years Experience</p>
+          </div>
+          <div class="sass grid-item">
+            <h3>Sass</h3>
+            <p>3 Years Experience</p>
+          </div>
         </div>
       </section>
       <!--=============== projects-section ===================-->
-      <section class="projects-section">
-        <div class="projects-section__head">
-          <h2>Projects</h2>
-          <a href="#">CONTACT ME</a>
-        </div>
-        <div class="projects-section__body">
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-1-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-1-small.webp" alt="DESIGN" />
-              </picture>
-            </div>
-            <p>DESIGN PORTFOLIO</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
+      <section class="container">
+        <div class="projects-section">
+          <div class="projects-section__head">
+            <h2>Projects</h2>
+            <a href="#">CONTACT ME</a>
           </div>
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-2-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-2-small.webp" alt="DESIGN" />
-              </picture>
+          <div class="projects-section__body">
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-1-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-1-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">DESIGN PORTFOLIO</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
             </div>
-            <p>E-LEARNING LANDING PAGE</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-2-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-2-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">E-LEARNING LANDING PAGE</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
             </div>
-          </div>
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-3-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-3-small.webp" alt="DESIGN" />
-              </picture>
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-3-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-3-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">TODO WEB APP</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
             </div>
-            <p>TODO WEB APP</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JAVASCRIPT</p>
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-4-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-4-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">ENTERTAINMENT WEB APP</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
             </div>
-          </div>
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-4-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-4-small.webp" alt="DESIGN" />
-              </picture>
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-5-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-5-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">MEMORY GAME</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
             </div>
-            <p>ENTERTAINMENT WEB APP</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JAVASCRIPT</p>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-5-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-5-small.webp" alt="DESIGN" />
-              </picture>
-            </div>
-            <p>MEMORY GAME</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JAVASCRIPT</p>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div>
-              <picture>
-                <source media="(min-width: )" srcset="./starter-code/assets/images/thumbnail-project-6-large.webp">
-                <img src="./starter-code/assets/images/thumbnail-project-6-small.webp" alt="DESIGN" />
-              </picture>
-            </div>
-            <p>ART GALLERY SHOWCASE</p>
-            <div>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JAVASCRIPT</p>
+            <div class="grid-item">
+              <div class="grid-item__img">
+                <picture>
+                  <source
+                    media="(min-width: )"
+                    srcset="
+                      ./starter-code/assets/images/thumbnail-project-6-large.webp
+                    "
+                  />
+                  <img
+                    src="./starter-code/assets/images/thumbnail-project-6-small.webp"
+                    alt="DESIGN"
+                  />
+                </picture>
+              </div>
+              <p class="grid-item__main-p">ART GALLERY SHOWCASE</p>
+              <div class="grid-item__lang-uses">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!--=============== contact-section ===================-->
-      <section class="contact-section">
+    </main>
+    <footer class="container">
+      <div class="contact-section">
         <div class="contact-section__text">
-          <h2></h2>
-          <p></p>
+          <h2>Contact</h2>
+          <p>
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
         </div>
         <div class="contact-section__form">
           <form action="">
-            <input type="text" value="" />
-            <input type="email" value="" />
-            <input type="text" value="" />
-            <input type="submit" value="" />
+            <input type="text" placeholder="NAME" />
+            <input type="email" placeholder="EMAIL" />
+            <input type="text" placeholder="MESSAGE" />
+            <input type="submit" value="SEND MESSAGE" />
           </form>
         </div>
-      </section>
-
-      <!--=============== footer ===================-->
+      </div>
       <hr />
-      <footer>
-        <div>
-          <p class="hero__header__logo"></p>
-          <nav class="hero__header__nav">
-            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-          </nav>
-        </div>
-      </footer>
-    </main>
+      <div class="footer__container">
+        <p class="hero__header__logo">adamkeyes</p>
+        <nav class="hero__header__nav">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
