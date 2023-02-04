@@ -128,13 +128,13 @@ p {
 @media (min-width: 1200px) {
   main {
     padding-top: 39px;
+    padding-bottom: 139px;
     width: 1110px;
     position: relative;
   }
 
   .hero {
-    margin-bottom: 104px;
-    /* display: flex; */
+    margin-bottom: 219px;
   }
 
   .hero__header {
@@ -199,9 +199,20 @@ p {
   .hero__text a {
     font-size: 16px;
     line-height: 26px;
-    /* identical to box height, or 162% */
-
     letter-spacing: 2.28571px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .hero__text a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-top: 2px solid var(--green);
+    z-index: 1;
   }
 
   .hero__img {
@@ -212,9 +223,9 @@ p {
     z-index: -2;
   }
 
-  hr {
-    color: var(--white);
+  .hr {
     width: 100%;
+    margin-bottom: 72px;
   }
 
   /*=============== expirence-section =============*/
@@ -222,7 +233,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 58px 35px;
+    margin-bottom: 140px;
   }
 
   .expirence-section .grid-item {
@@ -232,9 +244,8 @@ p {
   .expirence-section .grid-item h3 {
     font-size: 48px;
     line-height: 56px;
-    /* identical to box height, or 117% */
-
     letter-spacing: -1.5px;
+    margin-bottom: 14px;
   }
 
   .expirence-section .grid-item p {
@@ -248,25 +259,41 @@ p {
 
   .projects-section__head {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   .projects-section__head h2 {
     font-size: 88px;
     line-height: 88px;
-    /* identical to box height, or 100% */
-
     letter-spacing: -2.5px;
   }
 
   .projects-section__head a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.28571px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .projects-section__head a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-top: 2px solid var(--green);
+    z-index: 1;
   }
 
   .projects-section__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 69px 30px;
   }
 
   .projects-section__body .grid-item {
@@ -276,6 +303,7 @@ p {
 
   .projects-section__body .grid-item .grid-item__img {
     width: 540px;
+    margin-bottom: 20px;
   }
 
   .projects-section__body .grid-item .grid-item__main-p {
@@ -283,6 +311,7 @@ p {
     font-size: 24px;
     line-height: 32px;
     color: #ffffff;
+    margin-bottom: 7px;
   }
 
   .projects-section__body .grid-item .grid-item__lang-uses {
@@ -293,7 +322,7 @@ p {
     font-size: 18px;
   }
 
-  .grid-item__lang-uses p + .grid-item__lang-uses p {
+  .grid-item__lang-uses__p2 {
     margin-left: 18px;
   }
 
@@ -312,6 +341,7 @@ p {
     font-size: 88px;
     line-height: 88px;
     letter-spacing: -2.5px;
+    margin-bottom: 36px;
   }
 
   .contact-section__text p {
@@ -325,6 +355,10 @@ p {
   }
 
   form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 
   input {
@@ -348,12 +382,31 @@ p {
     line-height: 26px;
     letter-spacing: 2.28571px;
     color: #ffffff;
+    border: none;
+    background: transparent;
+    margin-top: 32px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  input[type="submit"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid var(--green);
+    z-index: 1;
   }
 
   /*============ footer =============*/
-  footer a img {
-    width: 24px;
-    height: 24px;
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 92px;
   }
 }
 
